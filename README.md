@@ -6,7 +6,7 @@ most of the Statistical measures functions, written by [Fris](https://twitter.co
  Docs can be found here [GoStats Docs](https://godoc.org/github.com/OGFris/GoStats).
 
 ## License
- GoStats is under the [GNU General Public License v3.0](https://github.com/OGFris/GoStats/blob/master/LICENSE).
+ GoStats is under the [MIT License](https://github.com/OGFris/GoStats/blob/master/LICENSE).
 
     MIT License
 
