@@ -1,4 +1,4 @@
-# GoStats
+# GoStats [![cover.run](https://cover.run/go/github.com/OGFris/GoStats.svg?style=flat&tag=golang-1.10)](https://cover.run/go?tag=golang-1.10&repo=github.com%2FOGFris%2FGoStats)
  GoStats is an Open Source GoLang library for math statistics mostly used in Machine Learning domains, it covers
 most of the Statistical measures functions, written by [Fris](https://twitter.com/OGFris).
 
