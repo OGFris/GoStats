@@ -2,6 +2,9 @@
  GoStats is an Open Source GoLang library for math statistics mostly used in Machine Learning domains, it covers
 most of the Statistical measures functions, written by [Fris](https://twitter.com/OGFris).
 
+## Documentations
+ Docs can be found here [GoStats' Docs](https://godoc.org/github.com/OGFris/GoStats).
+
 ## License
  GoStats is under the [GNU General Public License v3.0](https://github.com/OGFris/GoStats/blob/master/LICENSE).
 
