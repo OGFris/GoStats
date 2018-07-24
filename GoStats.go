@@ -28,18 +28,18 @@ import (
 )
 
 const (
-	// MaxFloat64: Biggest number that can be used in Go using the float64 type.
+	// MaxFloat64 is the biggest number that can be used in Go using the float64 type.
 	MaxFloat64 = math.MaxFloat64
-	// MinFloat64: Smallest number that can be used in Go using the float64 type.
+	// MinFloat64 is the smallest number that can be used in Go using the float64 type.
 	MinFloat64 = -(MaxFloat64)
 )
 
-// Mean: Get the Mean of the float64 numbers.
+// Mean of the float64 numbers.
 func Mean(numbers []float64) float64 {
 	return Total(numbers) / float64(len(numbers))
 }
 
-// Mode: Get the Mode of the float64 numbers.
+// Mode the float64 numbers.
 func Mode(numbers []float64) (mode float64, r int) {
 	r = math.MinInt64
 	for i, n := range Repeats(numbers) {
@@ -51,7 +51,7 @@ func Mode(numbers []float64) (mode float64, r int) {
 	return
 }
 
-// Repeats: Get the Repeats of the float64 numbers.
+// Repeats of the float64 numbers.
 func Repeats(numbers []float64) (r map[float64]int) {
 	r = make(map[float64]int)
 	for _, n := range numbers {
@@ -60,7 +60,7 @@ func Repeats(numbers []float64) (r map[float64]int) {
 	return
 }
 
-// Total: Get the Total of the float64 numbers.
+// Total of the float64 numbers.
 func Total(numbers []float64) (total float64) {
 	for _, n := range numbers {
 		total += n
@@ -68,7 +68,7 @@ func Total(numbers []float64) (total float64) {
 	return
 }
 
-// Median: Get the Median of the float64 numbers.
+// Median of the float64 numbers.
 func Median(numbers []float64, sort bool) float64 {
 	if sort {
 		numbers = Sort(numbers)
@@ -83,13 +83,13 @@ func Median(numbers []float64, sort bool) float64 {
 	}
 }
 
-// Singular: Get whether a number is singular or not.
+// Singular is to get whether a number is singular or not.
 func Singular(number float64) bool {
 	n := number / 2
 	return float64(int(n)) != n
 }
 
-// Min: Get the smallest number of the float64 numbers.
+// Min is to get the smallest number of the float64 numbers.
 func Min(numbers []float64) (iMin int, min float64) {
 	min = MaxFloat64
 	for i, n := range numbers {
@@ -101,7 +101,7 @@ func Min(numbers []float64) (iMin int, min float64) {
 	return
 }
 
-// Max: Get the biggest number of the float64 numbers.
+// Max is to get the biggest number of the float64 numbers.
 func Max(numbers []float64) (iMax int, max float64) {
 	max = MinFloat64
 	for i, n := range numbers {
@@ -113,14 +113,14 @@ func Max(numbers []float64) (iMax int, max float64) {
 	return
 }
 
-// Range: Get the Range of the float64 numbers.
+// Range of the float64 numbers.
 func Range(numbers []float64) float64 {
 	_, max := Max(numbers)
 	_, min := Min(numbers)
 	return max - min
 }
 
-// Variance: Get the Variance of the float64 numbers.
+// Variance of the float64 numbers.
 func Variance(numbers []float64) (variance float64) {
 	mean := Mean(numbers)
 	for _, n := range numbers {
@@ -131,12 +131,12 @@ func Variance(numbers []float64) (variance float64) {
 	return
 }
 
-// StandardDeviation: Get the Standard Deviation of the float64 numbers.
+// Standard Deviation of the float64 numbers.
 func StandardDeviation(numbers []float64) float64 {
 	return math.Sqrt(Variance(numbers))
 }
 
-// Sort: Get the sorted []float64.
+// Sort the []float64.
 func Sort(numbers []float64) []float64 {
 	sort.Float64s(numbers)
 	return numbers
