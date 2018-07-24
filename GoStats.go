@@ -78,9 +78,8 @@ func Median(numbers []float64, sort bool) float64 {
 	}
 	if Singular(float64(len(numbers))) {
 		return numbers[len(numbers)/2]
-	} else {
-		return (numbers[len(numbers)/2] + numbers[len(numbers)/2-1]) / 2
 	}
+	return (numbers[len(numbers)/2] + numbers[len(numbers)/2-1]) / 2
 }
 
 // Singular is to get whether a number is singular or not.
@@ -131,7 +130,7 @@ func Variance(numbers []float64) (variance float64) {
 	return
 }
 
-// Standard Deviation of the float64 numbers.
+// StandardDeviation of the float64 numbers.
 func StandardDeviation(numbers []float64) float64 {
 	return math.Sqrt(Variance(numbers))
 }
