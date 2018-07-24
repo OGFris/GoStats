@@ -23,8 +23,8 @@
 package GoStats
 
 import (
-	"testing"
 	"log"
+	"testing"
 )
 
 func init() {
@@ -39,56 +39,56 @@ func TestSingular(t *testing.T) {
 }
 
 func TestMax(t *testing.T) {
-	if _,n := Max([]float64{1.1,0.2}); n != 1.1 {
+	if _, n := Max([]float64{1.1, 0.2}); n != 1.1 {
 		log.Fatalln("Max() didn't give the correct value!")
 		t.Fail()
 	}
 }
 
 func TestMin(t *testing.T) {
-	if _,n := Min([]float64{1.1,0.2}); n != 0.2 {
+	if _, n := Min([]float64{1.1, 0.2}); n != 0.2 {
 		log.Fatalln("Min() didn't give the correct value!")
 		t.Fail()
 	}
 }
 
 func TestTotal(t *testing.T) {
-	if Total([]float64{1.0,0.5,2.0}) != 3.5 {
+	if Total([]float64{1.0, 0.5, 2.0}) != 3.5 {
 		log.Fatalln("Total() didn't give the correct value!")
 		t.Fail()
 	}
 }
 
 func TestRange(t *testing.T) {
-	if Range([]float64{0.1,0.2}) != 0.1 {
+	if Range([]float64{0.1, 0.2}) != 0.1 {
 		log.Fatalln("Range() didn't give the correct value!")
 		t.Fail()
 	}
 }
 
 func TestMean(t *testing.T) {
-	if Mean([]float64{2.0,2.0}) != 2 {
+	if Mean([]float64{2.0, 2.0}) != 2 {
 		log.Fatalln("Mean() didn't give the correct value!")
 		t.Fail()
 	}
 }
 
 func TestRepeats(t *testing.T) {
-	if Repeats([]float64{0.1,0.4,0.4})[0.4] != 2 {
+	if Repeats([]float64{0.1, 0.4, 0.4})[0.4] != 2 {
 		log.Fatalln("Repeats() didn't give the correct value!")
 		t.Fail()
 	}
 }
 
 func TestMode(t *testing.T) {
-	if mode,r := Mode([]float64{0.1,0.4,0.4}); r != 2 || mode != 0.4 {
+	if mode, r := Mode([]float64{0.1, 0.4, 0.4}); r != 2 || mode != 0.4 {
 		log.Fatalln("Mode() didn't give the correct value!")
 		t.Fail()
 	}
 }
 
 func TestMedian(t *testing.T) {
-	if Median([]float64{0.5,0.6,0.4,0.4}, true) != 0.45 {
+	if Median([]float64{0.5, 0.6, 0.4, 0.4}, true) != 0.45 {
 		log.Fatalln("Median() didn't give the correct value! #1")
 		t.Fail()
 	}
@@ -96,21 +96,21 @@ func TestMedian(t *testing.T) {
 		log.Fatalln("Median(0) didn't give the correct value! #2")
 		t.Fail()
 	}
-	if Median([]float64{0.5,0.6,0.4}, false) != 0.6 {
+	if Median([]float64{0.5, 0.6, 0.4}, false) != 0.6 {
 		log.Fatalln("Median() didn't give the correct value! #3")
 		t.Fail()
 	}
 }
 
 func TestVariance(t *testing.T) {
-	if Variance([]float64{1.0,2.0}) != 0.25 {
+	if Variance([]float64{1.0, 2.0}) != 0.25 {
 		log.Fatalln("Variance() didn't give the correct value!")
 		t.Fail()
 	}
 }
 
 func TestStandardDeviation(t *testing.T) {
-	if StandardDeviation([]float64{10,10}) != 0 {
+	if StandardDeviation([]float64{10, 10}) != 0 {
 		log.Fatalln("StandardDeviation() didn't give the correct value!")
 		t.Fail()
 	}
