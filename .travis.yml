@@ -9,4 +9,3 @@ before_install:
 
 script:
  - go test -v ./...
- - go build -race -ldflags "-extldflags '-static'"
