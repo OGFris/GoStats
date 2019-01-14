@@ -1,5 +1,5 @@
 # GoStats [![Build Status](https://travis-ci.com/SpecterTeam/LegacyDB.svg?branch=master)](https://travis-ci.com/SpecterTeam/LegacyDB) [![cover.run](https://cover.run/go/github.com/OGFris/GoStats.svg?style=flat&tag=golang-1.10)](https://cover.run/go?tag=golang-1.10&repo=github.com%2FOGFris%2FGoStats) [![Go Report Card](https://goreportcard.com/badge/github.com/OGFris/GoStats)](https://goreportcard.com/report/github.com/OGFris/GoStats)
- GoStats is an Open Source GoLang library for math statistics mostly used in Machine Learning domains, it covers
+ GoStats is an Open Source Go library for math statistics mostly used in Machine Learning domains, it covers
 most of the Statistical measures functions, written by [Fris](https://twitter.com/OGFris).
 
 ## Documentations
